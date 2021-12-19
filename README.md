@@ -8,4 +8,5 @@
     * Numpy module (1.20.3)
     * citiPy 0.0.5
     * matplotlib (version?)
+    * requests library (version?)
 * Visual Studio Code (1.63.2)
