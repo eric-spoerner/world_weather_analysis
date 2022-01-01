@@ -34,7 +34,6 @@ Weather-driven vacation recommendation engine using Google Maps API and Weather 
 * Added data set to map two-digit ISO country code to full country name
 * Exploratory analysis of full data set
 * Sanitized inputs for min/max temperature
-* Additional exploratory analysis scripts
 * Appropriate capitalization for city and country codes pulled from citipy
 * Modified algo to allow for same-named cities in different countries
 
@@ -43,9 +42,13 @@ Weather-driven vacation recommendation engine using Google Maps API and Weather 
 ### Before initial release
 
 * Self-guided selection of vacation area
-    * Allow multiple parameters to narrow data set down to a reasonable amount.
+    * Allow multiple parameters to narrow data set down to a reasonable amount.  Probably just ask about rain to start.  Requires subjective binning.
+        * Keep running tally of values available for trip planning
+    * Prompt user to pick eligible country
     * Auto-map itinerary.  Should be ok using `optimize_waypoints` in map call.
+        * Would need to do geographic lookups.
     * User will pick starting city once country is chosen and map is selected.
+* Add robust logging to google API hotel search?
 * Add humidity/wind/etc to selection engine?  If that route is taken, encapsulate into function
     * minima/maxima should be determined by actual values in data set
 * Find out why current query from API is pulling data bout the city itself vs the way it was on the assignment
@@ -65,3 +68,4 @@ Weather-driven vacation recommendation engine using Google Maps API and Weather 
 * Repeating placenames due to countries
 * gmaps build
 * google scraping considerations - getting nastygrams from google about being a suspected scraper
+* JSON
