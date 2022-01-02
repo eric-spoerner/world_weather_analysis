@@ -27,15 +27,23 @@ Weather-driven vacation recommendation engine using Google Maps API and Weather 
     * run cities from weather data csv through google maps API
         * identify hotels from API and add to JSON file.
 * Script 3 (vacation itinerary)
+    * Map out potential destinations hotels identified by Script 2.
+    * User manually identifies four cities in a single country and hard-codes them into script.
+    * Call API with four cities to generate itinerary.
+
 
 ## Modifications added
 
-* Robust logging for weather API pull
+* Weather API call:
+    * Robust logging for weather API pull
+    * Appropriate capitalization for city and country codes pulled from citipy
+    * Modified algo to allow for same-named cities in different countries   
 * Added data set to map two-digit ISO country code to full country name
 * Exploratory analysis of full data set
-* Sanitized inputs for min/max temperature
-* Appropriate capitalization for city and country codes pulled from citipy
-* Modified algo to allow for same-named cities in different countries
+* Country/City picker: 
+    * Print eligible countries for vacations and 
+    * Sanitized inputs for min/max temperature
+
 
 ## To-do
 
